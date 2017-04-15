@@ -1,0 +1,35 @@
+#! /bin/bash
+
+# source the basrhc
+source ~/.bashrc
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Colorize prompt with Git branch name
+export PS1="\[\033[0;95m\][rohan]\[\033[0m\]\[\033[0;94m\](\$(git branch 2>/dev/null | grep '^*' | colrm 1 2))\$\[\033[0m\] "
+
+# Safe move, copy and remove
+alias mv="mv -i"
+alias cp="cp -i"
+alias rm="rm -i"
+
+# Unlimited .bash_history size
+export HISTFILESIZE= 
+export HISTSIZE=
+
+# set the editor (will be also used for fc)
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+# Export variable PYTHONSTARTUP to run code during python startup
+export PYTHONSTARTUP="$HOME/.pythonrc"
+
+# Export Git editor
+export GIT_EDITOR=vim
+
+# Postgres start and stop aliases
+alias pgstart="pg_ctl -D /usr/local/var/postgres start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
+
+# Activate virtualenv
+source ~/work/code/virtualenvs/base/bin/activate
