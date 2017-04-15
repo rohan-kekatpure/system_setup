@@ -30,12 +30,13 @@ Further instructions can be found [here](http://stuff-things.net/2016/02/11/stup
 
 ### Adding public keys to Github/Bitbucket
 
- 1. Open repository settings
+ 1. Open your bitbucket account settings. Do not add access keys at the repository level. This will only give you pull permissions. To get push permissions you need to add keys to your profile, not to the repository.
 
- 2. Navigate to add/remove access keys 
+ 2. Navigate to add/remove SSH keys 
 
-     a. They are in different places in Github and Bitbucket. 
+     a. In Bitbucket: `https://bitbucket.org/account/user/<username>/ssh-keys`
+     b. In Github: `https://github.com/settings/keys`
 
  3. Carefully copy-paste the key 
 
-     a. (`pbcopy` command in MAC OS comes in handy)
+     a. Use `pbcopy` command in MAC OS to copy without dragging mouse
