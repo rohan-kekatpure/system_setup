@@ -35,6 +35,7 @@ Further instructions can be found [here](http://stuff-things.net/2016/02/11/stup
  2. Navigate to add/remove SSH keys 
 
      a. In Bitbucket: `https://bitbucket.org/account/user/<username>/ssh-keys`
+     
      b. In Github: `https://github.com/settings/keys`
 
  3. Carefully copy-paste the key 
