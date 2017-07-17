@@ -40,7 +40,7 @@ $ mkdir ~/work/code/virtualenvs
 $ cd ~/work/code/virtualenvs
 
 # Create your basic, workhorse virtualenvironment that you'll use for most things
-$ virtualenv base 
+$ virtualenv base
 
 # Activate the `base` virtualenvironment
 $ source base/bin/activate
@@ -54,7 +54,7 @@ $ pip install scipy
 # IPython
 $ pip install ipython
 
-# Jupyter 
+# Jupyter
 $ pip install jupyter
 
 # Scikit learn
@@ -68,7 +68,7 @@ $ echo ‘backend: TkAgg’ >> ~/.matplotlib/matplotlibrc
 
 # Pandas
 $ pip install pandas
-``` 
+```
 
 # Java (SE)
 Streammosaic end product is in Java, so let us set up our Java environment.
@@ -86,7 +86,7 @@ $ export JAVA_HOME=$(/usr/libexec/java_home)
 
 ```bash
 
-#Maven 
+#Maven
 $ brew install maven
 ```
 
@@ -125,7 +125,7 @@ $ brew cask install xquartz
 # Tap Homebrew science
 $ brew tap homebrew/science
 
-# Install the gcc package (the default one that came 
+# Install the gcc package (the default one that came
 # with the OS does not include gfortran)
 $ brew install gcc
 
@@ -155,7 +155,7 @@ Type `octave` on the command line. In the window that opens up, type the followi
 ```matlab
 octave>> x = 0 : 0.1 : 10; y = sin(pi * x); plot(x,y,'o')
 ```
-  
+
 A plot window with sinusoid should show up.
 
 ## Octave command-line shell
@@ -211,7 +211,7 @@ The setup steps are as follows.
 
 Verify h2o installation and its communication with Python
 
-  1. Download a sample datafile from https://s3.amazonaws.com/h2o-public-test-data/smalldata/logreg/prostate.csv. 
+  1. Download a sample datafile from https://s3.amazonaws.com/h2o-public-test-data/smalldata/logreg/prostate.csv.
 
   2. Create a python script with following contents.
 
@@ -257,8 +257,9 @@ $ brew install postgres
 
 # Add following lines to your ~/.bash_profile
 # Postgres start/stop
-alias pgstart="pg_ctl -D /usr/local/var/postgres start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
+alias pgstart="brew services start postgresql"
+alias pgstop="brew services stop postgresql"
+
 
 # Activate your updated bash_profile
 $ source ~/.bash_profile
@@ -282,7 +283,7 @@ $ pgstop
   * Settings -> Trackpad
   * Uncheck all gestures
 
-## Disable Siri 
+## Disable Siri
   * Settings -> Siri
   * Uncheck 'Enable Siri'
 
