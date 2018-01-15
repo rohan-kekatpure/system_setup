@@ -19,7 +19,7 @@ alias rm="rm -i"
 #alias postgres-stop="pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log -m fast stop"
 
 # unlimited .bash_history size
-export HISTFILESIZE= 
+export HISTFILESIZE=
 export HISTSIZE=
 
 # export DISPLAY
@@ -36,8 +36,8 @@ export PYTHONSTARTUP="$HOME/.pythonrc"
 export GIT_EDITOR=vim
 
 # Postgres
-alias pgstart="pg_ctl -D /usr/local/var/postgres start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
+alias pgstart="brew services start postgres"
+alias pgstop="brew services stop postgres"
 
 # Activate virtualenv
 source ~/work/code/virtualenvs/base/bin/activate
