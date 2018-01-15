@@ -64,7 +64,7 @@ $ pip install scikit-learn
 $ pip install matplotlib
 
 # Set the Matplotlib backend
-$ echo ‘backend: TkAgg’ >> ~/.matplotlib/matplotlibrc
+$ echo 'backend: TkAgg' >> ~/.matplotlib/matplotlibrc
 
 # Pandas
 $ pip install pandas
