@@ -71,7 +71,7 @@ $ pip install pandas
 ```
 
 # Java (SE)
-Streammosaic end product is in Java, so let us set up our Java environment.
+Let us set up our Java environment.
 
 ```bash
 
@@ -111,7 +111,7 @@ Scala allows you to write scripts using pre-existing Java code. It is also a sta
 $ brew install scala
 ```
 
-# Octave
+# Octave [optional]
 For some projects, we internally use MATLAB for data generation and quick modeling tests. Octave is open-source alternative to MATLAB. As long as your MATLAB scripts don't use specialized toolkits, they should be easily portable to octave. Below are the steps to Octave installation. Note that these steps are customized for MacOS Sierra (10.12.2) and will most likely change in future versions of the OS.
 
 ```bash
@@ -190,7 +190,7 @@ $ octave octave_test.m
 
 You should now have image files `sinecurve.png` and `surfaceplot.png` in your working directory.
 
-# h2o with Python
+# h2o with Python [optional]
 
 If you're a Python person, it is straightforward to get started with
 h2o using Python. h2o is written in Java. So the Java <--> Python
@@ -240,7 +240,7 @@ my_gbm_metrics.show()
 
 ```
 
-# Postgresql
+# Postgresql [optional]
 
 A local SQL installation is often handy for quick data summurization (mean,
 median, max/min, counts etc), cleansing and selective exporting (clean CSV of
